@@ -1,0 +1,12 @@
+.about-us-container {
+    background-color: var(--about-us);
+    padding: 60px 0 10px 0;
+}
+
+.about-us-container h3 {
+    font-size: 32px;
+}
+
+@media screen and (min-width: 650px) {
+    
+}

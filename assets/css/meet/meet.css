@@ -1,0 +1,30 @@
+.meet-our-people-container {
+    padding: 107.12px 0px 100px 0px;
+    background-color: var(--meet-our-people);
+}
+
+.meet-our-people-container i {
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 60px;
+    margin: 4px;
+    margin-top: 25px;
+    color: white;
+    background-color: #BDD1DF;
+}
+
+@media screen and (min-width: 0px) {
+    .meet-our-people-container h3{
+        font-size: 32px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .meet-our-people-container h3{
+        font-size: 40px;
+    }
+}
+

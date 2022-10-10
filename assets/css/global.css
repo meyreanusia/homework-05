@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap');
+
+
+:root {
+    --home-page:#87509C;
+    --btn:#EB7D4B;
+    --services-provide:#17C2A4;
+    --meet-our-people: #E7F1F8;
+    --portifolio:#FFDD99;
+    --about-us:#D74680;
+    --contact: #3C5499;
+}
+
+*{  
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
+}
+
+body{
+    font-family: 'Titillium Web', sans-serif;
+
+}
