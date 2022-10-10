@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 05: Cuda</title>
+    <link rel="stylesheet" href="./assets/css/join.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg pt-5">
+                <div class="container-fluid  ">
+                    <a class="navbar-logo" href="#"><img src="./assets/logo.svg" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="justify-content-end collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link text-uppercase text-white" aria-current="page" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link text-uppercase text-white" href="#about">About</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link text-uppercase text-white" aria-current="page" href="#work">Work</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link text-uppercase text-white" href="#blog">Blog</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link text-uppercase text-white" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="home-page-container" id="home">
+            <div class="home-page-conteudo">
+
+                <div class="row">
+                    <h1 class="font-weight-bold text-white">Hi there! We are the new kids on the block and we build
+                        awesome websites and mobile apps.</h1>
+                </div>
+                <div class="row ">
+                    <div class=" justify-content-center col-md-12">
+                        <button type="button" class="btn btn-success btn-lg">Work With Us</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="services-we-provide-container" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="text-center col-md-12 justify-content-center">
+                        <h3 class="fw-bold text-uppercase">SERVICES WE PROVIDE</h3>
+                        <p class="text-services mt-2 mb-5">
+                            We are working with both individuals and businesses from all over the globe
+                            to create awesome websites and applications.
+                        </p>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-3">
+                        <div class="align-content-center service-box d-flex flex-column">
+                            <img class="align-self-center mb-5" src="./assets/img/services-provide/flag.svg" alt="">
+                            <p class="text-center text-uppercase">Branding</p>
+                            <small class="text-center px-4">Lorem ipsum dolor sit amet,
+                                consectetuer adipiscing elit,
+                                sed diam nonummy nibh.</small>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="align-content-center service-box d-flex flex-column">
+                            <img class="align-self-center mb-5" src="./assets/img/services-provide/pencil.svg" alt="">
+                            <p class="text-center text-uppercase">Design</p>
+                            <small class="text-center px-4">SSed ut perspiciatis unde
+                                omnis iste natus error sit
+                                voluptatem </small>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="align-content-center service-box d-flex flex-column">
+                            <img class="align-self-center mb-5" src="./assets/img/services-provide/gear.svg" alt="">
+                            <p class="text-center text-uppercase">Development</p>
+                            <small class="text-center px-4">At vero eos et accusamus et
+                                iusto odio dignissimos qui
+                                blanditiis praesentium.</small>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="align-content-center service-box d-flex flex-column">
+                            <img class="align-self-center mb-5" src="./assets/img/services-provide/rocket.svg">
+                            <p class="text-center text-uppercase">Rocket Science</p>
+                            <small class="text-center px-4">Et harum quidem rerum est
+                                et expedita distinctio.
+                                Nam libero tempore.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="meet-our-people-container">
+            <div class="container">
+                <div class="row">
+                    <div class="text-center col-md-12 justify-content-center">
+                        <h3 class="fw-bold text-uppercase">Meet Our Beautiful Team</h3>
+                        <p>
+                            We are a small team of designers and developers, who help brands with big ideas. </p>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-3">
+                        <div class="flex-column d-flex align-content-center">
+                            <img class="align-self-center mb-5" src="./assets/img/meet/anne-hathaway.svg" alt="">
+                            <h6 class="text-center my-0">Anne Hathaway</h6>
+                            <small class="text-blue text-center px-4 my-2"
+                                style="color: rgba(48, 186, 231, 1); font-weight:400;">CEO / Marketing Guru</small>
+                            <small class="text-center px-4">emo enim ipsam voluptas
+                                sit aspernatur aut odit aut
+                                fugit, sed quia consequuntur
+                                magni dolores eos qui ratione</small>
+                            <div class="d-flex justify-content-center">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands  fa-linkedin"></i>
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="align-content-center d-flex flex-column">
+                            <img class="align-self-center mb-5" src="./assets/img/meet/kate-upton.svg" alt="">
+                            <h6 class="text-center my-0">Kate Upton</h6>
+                            <small class="text-blue text-center px-4 my-2"
+                                style="color: rgba(48, 186, 231, 1); font-weight:400;">Creative Director</small>
+                            <small class="text-center px-4">emo enim ipsam voluptas
+                                sit aspernatur aut odit aut
+                                fugit, sed quia consequuntur
+                                magni dolores eos qui ratione
+                            </small>
+                            <div class="justify-content-center d-flex">
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands  fa-linkedin"></i>
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="align-content-center d-flex flex-column">
+                            <img class="align-self-center mb-5" src="./assets/img/meet/olivia-wilde.svg" alt="">
+                            <h6 class="text-center my-0">Olivia Wilde</h6>
+                            <small class="text-center text-blue px-4 my-2"
+                                style="color: rgba(48, 186, 231, 1); font-weight:400;">Lead Designer</small>
+                            <small class="text-center px-4">Nemo enim ipsam voluptas
+                                sit aspernatur aut odit aut
+                                fugit, sed quia consequuntur
+                                magni dolores eos qui ratione
+                            </small>
+                            <div class="justify-content-center d-flex">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands  fa-linkedin"></i>
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="align-content-center d-flex flex-column">
+                            <img class="align-self-center mb-5" src="./assets/img/meet/ashley-greene.svg" alt="">
+                            <h6 class="text-center my-0">Ashley Greene</h6>
+                            <small class="text-blue text-center px-4 my-2"
+                                style="color: rgba(48, 186, 231, 1); font-weight:400;">SEO / Developer</small>
+                            <small class="text-center px-4">emo enim ipsam voluptas
+                                sit aspernatur aut odit aut
+                                fugit, sed quia consequuntur
+                                magni dolores eos qui ratione</small>
+                            <div class="d-flex justify-content-center">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="we-got-skills-container">
+            <div class="container container-skills">
+                <div class="row">
+                    <div class="skill-conteudo col-md-12 text-center justify-content-center">
+                        <h3 class="fw-bold text-uppercase">We got Skills!</h3>
+                        <p class="text-skills mb-5">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
+                <div class="row w-100">
+                    <div class="col-md-3" style="padding-bottom: 30px">
+                        <div class="align-items-center d-flex flex-column justify-content-center">
+                            <div class="porcentagem-containert">
+                                <img src="./assets/img/skills/blue-circle.svg" alt="">
+                                <h5>90%</h5>
+                            </div>
+                            <small class="text-grafico fw-bold text-center text-uppercase">web design</small>
+                        </div>
+                    </div>
+                    <div class="col-md-3" style="padding-bottom: 30px">
+                        <div class="align-items-center d-flex flex-column justify-content-center">
+                            <div class="porcentagem-containert">
+                                <img src="./assets/img/skills/pink-circle.svg" alt="">
+                                <h5>75%</h5>
+                            </div>
+                            <small class="text-grafico fw-bold text-center text-uppercase">HTML / CSS</small>
+                        </div>
+                    </div>
+                    <div class="col-md-3" style="padding-bottom: 30px">
+                        <div class="align-items-center d-flex flex-column justify-content-center">
+                            <div class="porcentagem-containert">
+                                <img src="./assets/img/skills/green-circle.svg" alt="">
+                                <h5>70%</h5>
+                            </div>
+                            <small class="text-grafico fw-bold text-center text-uppercase">GRAPHIC DESIGN</small>
+                        </div>
+                    </div>
+                    <div class="col-md-3" style="padding-bottom: 30px">
+                        <div class="align-items-center d-flex flex-column justify-content-center">
+                            <div class="porcentagem-containert">
+                                <img src="./assets/img/skills/orange-circle.svg" alt="">
+                                <h5>85%</h5>
+                            </div>
+                            <small class="text-grafico fw-bold text-center text-uppercase">UI / UX</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portifolio-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 justify-content-center text-center">
+                        <h3 class="text-uppercase fw-bold">our portfolio</h3>
+                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet
+                            consectetur, adipisci velit, sed quia non numquam
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-md-12 text-center mb-5">
+                        <button class="btn-portfolio hover-scale m-1 rounded border-0 text-uppercase">all</button>
+                        <button class="btn-portfolio hover-scale m-1 rounded border-0 text-uppercase">web</button>
+                        <button class="btn-portfolio hover-scale m-1 rounded border-0 text-uppercase">apps</button>
+                        <button class="btn-portfolio hover-scale m-1 rounded border-0 text-uppercase">icons</button>
+                    </div>
+
+                    <div class="row portifolio-box">
+                        <div class="flex-column col-md-6 justify-content-center d-flex">
+                            <div class="d-flex flex-column text-center">
+                                <img src="./assets/img/portifolio/laptop.svg" alt="laptop"
+                                    class="align-self-center image-portfolio img-fluid">
+                                <p class="text-uppercase mt-3">Isometric Perspective Mock-Up</p>
+                            </div>
+                            <div class="flex-column d-flex text-center">
+                                <img src="./assets/img/portifolio/laptop.svg" alt="laptop"
+                                    class="align-self-center image-portfolio img-fluid">
+                                <p class="text-uppercase mt-3">Isometric Perspective Mock-Up</p>
+                            </div>
+                        </div>
+                        <div class="flex-column col-md-6 justify-content-center d-flex">
+                            <div class="d-flex flex-column text-center">
+                                <img src="./assets/img/portifolio/laptop.svg" alt="laptop"
+                                    class="align-self-center image-portfolio img-fluid">
+                                <p class="text-uppercase mt-3">Isometric Perspective Mock-Up</p>
+                            </div>
+                            <div class="d-flex flex-column text-center">
+                                <img src="./assets/img/portifolio/laptop.svg" alt="laptop"
+                                    class="align-self-center image-portfolio img-fluid">
+                                <p class="text-uppercase mt-3">Isometric Perspective Mock-Up</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-load-more-portfolio text-white hover-scale rounded text-uppercase">load more projects</button>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="about-us-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h3 class="text-uppercase text-white">what people say about us</h3>
+                        <div class="portfolio-line"></div>
+                        <p class="text-white fw-light mt-2">Our clients love us!</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="px-5 col-md-6 ">
+                        <div class="d-flex flex-column">
+                            <div class="my-5 row">
+                                <div class="col-md-3 col-4"><img src="./assets/img/about-us/base.svg" alt="Chanel Iman">
+                                </div>
+                                <div class="col-md-9 col-8 text-white">
+                                    <p class="fst-italic fw-light">“Vivamus luctus urna sed urna ultricies ac tempor
+                                        dui sagittis. In condimentum facilisis porta.”</p>
+                                    <div>
+                                        <p class="text-uppercase fw-bold m-0">Chanel Iman</p>
+                                        <small class="fw-light">CEO of Pinterest</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-1 my-5 row">
+                                <div class="col-md-3 col-4"><img src="./assets/img/about-us/base.svg" alt="Chanel Iman">
+                                </div>
+                                <div class="col-md-9 col-8  text-white">
+                                    <p class="fst-italic fw-light ">“Vivamus luctus urna sed urna ultricies ac tempor
+                                        dui sagittis. In condimentum facilisis porta.”</p>
+                                    <div>
+                                        <p class="text-uppercase fw-bold m-0">Chanel Iman</p>
+                                        <small class="fw-light">CEO of Pinterest</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 px-5">
+                        <div class="d-flex flex-column">
+                            <div class="card-1 my-5 row">
+                                <div class="col-md-3 col-4"><img src="./assets/img/about-us/base.svg" alt="Chanel Iman">
+                                </div>
+                                <div class="col-md-9 col-8 text-white">
+                                    <p class="fst-italic fw-light">“Vivamus luctus urna sed urna ultricies ac tempor
+                                        dui sagittis. In condimentum facilisis porta.”</p>
+                                    <div>
+                                        <p class="text-uppercase fw-bold m-0">Chanel Iman</p>
+                                        <small class="fw-light">CEO of Pinterest</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-1 my-5 row">
+                                <div class="col-md-3 col-4"><img src="./assets/img/about-us/base.svg" alt="Chanel Iman">
+                                </div>
+                                <div class="col-8 col-md-9 text-white">
+                                    <p class="fst-italic fw-light">“Vivamus luctus urna sed urna ultricies ac tempor
+                                        dui sagittis. In condimentum facilisis porta.”</p>
+                                    <div>
+                                        <p class="text-uppercase m-0 fw-bold">Chanel Iman</p>
+                                        <small class="fw-light">CEO of Pinterest</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer>
+            <div class="container">
+                <div class="text-white row justify-content-center py-4">
+                    <div class="hover-scale col-md-1 col-12"><a href="#"
+                            class="text-white text-decoration-none">Facebook</a></div>
+                    <div class="hover-scale col-md-1 col-12"><a href="#"
+                            class="text-white text-decoration-none ">Twitter</a></div>
+                    <div class="hover-scale col-md-1 col-12"><a href="#"
+                            class="text-white text-decoration-none">Google+</a></div>
+                    <div class="hover-scale col-md-1 col-12"><a href="#"
+                            class="text-white text-decoration-none">Linkedin</a></div>
+                    <div class="hover-scale col-md-1 col-12"><a href="#"
+                            class="text-white text-decoration-none">Behance</a></div>
+                    <div class="hover-scale col-md-1 col-12"><a href="#"
+                            class="text-white text-decoration-none">Dribble</a></div>
+                    <div class="hover-scale col-md-1 col-12"><a href="#"
+                            class="text-white text-decoration-none">Github</a></div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Responsividade -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+            </script>
+
+</body>
+
+</html>

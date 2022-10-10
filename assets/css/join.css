@@ -1,0 +1,32 @@
+/* Arquivo de unificação de CSS para que haja somente um import no index */
+
+/* CSS Geral */
+@import url("./global.css");
+
+/* Header */
+@import url("./header/header.css");
+
+/* Home Page */
+@import url("./home-page/home-page.css");
+
+/* Section Services We Provide */
+@import url("./services-provide/services-provide.css");
+
+/* Section Meet Our Beautiful Team */
+@import url("./meet/meet.css");
+
+/* Section We Got Skills */
+@import url("./skills/skills.css");
+
+/* Section Our Portifolio */
+@import url("./portfolio/potifolio.css");
+
+/* section What People Say About Us */
+@import url("./about-us/about-us.css");
+
+/* section Get in touch */
+@import url("./contact/contact.css");
+
+/* footer */
+@import url("./footer/footer.css");
+
